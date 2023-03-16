@@ -31,24 +31,40 @@
 </head>
 <body>
 <div class="container">
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand"><i class="fa-solid fa-tree fa-2x"></i></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav navbar-right">
-        <a class="nav-link active" aria-current="page" href="KT.php">Home</a>
-        <a class="nav-link" href="features.php">Features</a>
-        <a class="nav-link" href="pricing.php">Pricing</a>
-        <a class="nav-link" href="team.php">Team</a>
-        <a class="nav-link" href="about.php">About</a>
-        <a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"></span>
+        <a class="navbar-brand">
+        <i class="fa-solid fa-tree fa-2x"></i>
+        </a>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </div>
-  </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                <a href="KT.php" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="features.php" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="pricing.php" class="nav-link">Download</a>
+            </li>
+            <li class="nav-item">
+                <a href="team.php" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.php" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.php" class="nav-link">Login</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <div class="jumbotron">
 <h1 class="text-center">Features</h1>

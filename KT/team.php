@@ -4,7 +4,11 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -27,26 +31,38 @@
 </head>
 <body>
 <div class="container">
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"></span>
+        <a class="navbar-brand">
+        <i class="fa-solid fa-tree fa-2x"></i>
+        </a>
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="KT.php">Home</a></li>
-        <li><a href="features.php">Features</a></li>
-        <li><a href="pricing.php">Pricing</a></li>
-        <li><a href="team.php">Team</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-      
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+                <a href="KT.php" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="features.php" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="pricing.php" class="nav-link">Download</a>
+            </li>
+            <li class="nav-item">
+                <a href="team.php" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.php" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.php" class="nav-link">Login</a>
+            </li>
+        </ul>
     </div>
-  </div>
 </nav>

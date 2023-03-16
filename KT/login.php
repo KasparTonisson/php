@@ -6,15 +6,18 @@
 <body>
 
 <?php
-
-    if (isset($_GET ["username"]) && isset($_GET["parool"])){
-    if($_GET["username"]=="admin" && $_GET ["parool"]=="admin"){
-
-    }}
-    
-
-?>
-
+        if (isset($_GET ["admin"] )&&isset($_GET ["parool"])) {
+            $cookie_name = $_GET ["admin"];
+            $cookie_value = $_GET ["parool"];
+            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
+            header('Location: admin.php');
+        }
+        
+            
+            
+        
+        
+    ?>
 
     <div id="login">
         <h3 class="text-center text-white pt-5">Login form</h3>
@@ -22,18 +25,18 @@
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="KT.php" method="get">
+                        <form id="login-form" class="form" action="login.php" method="get">
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
+                                <input type="text" name="admin" id="username" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="password" class="text-info">Password:</label><br>
                                 <input type="password" name="parool" id="password" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
+                                <input type="submit" class="btn btn-info btn-md" value="Logi Sisse">
                             </div>
                             
                         </form>
